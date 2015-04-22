@@ -1,8 +1,8 @@
-# mustache#
+# mustache 3.5#
 
-An extension of the mustache text template engine for .NET.
+An extension of the mustache text template engine for .NET.  **Back-ported to .NET 3.5**
 
-Download using NuGet: [mustache#](http://nuget.org/packages/mustache-sharp)
+~~Download using NuGet: [mustache#](http://nuget.org/packages/mustache-sharp)~~  T.B.D.
 
 ## Overview
 Generating text has always been a chore. Either you're concatenating strings like a mad man or you're getting fancy with `StringBuilder`. Either way, the logic for conditionally including values or looping over a collection really obscures the intention of the code. A more declarative approach would improve your code big time. Hey, that's why server-side scripting got popular in the first place, right?
