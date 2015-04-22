@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mustache</RootNamespace>
     <AssemblyName>mustache-sharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +35,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Net35\Enumerable35.cs" />
+    <Compile Include="Net35\String35.cs" />
     <Compile Include="ArgumentCollection.cs" />
     <Compile Include="CompoundGenerator.cs" />
     <Compile Include="ConditionTagDefinition.cs" />

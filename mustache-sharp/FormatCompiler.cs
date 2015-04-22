@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using Mustache.Properties;
+using Mustache.Net35;
 
 namespace Mustache
 {
@@ -129,7 +130,7 @@ namespace Mustache
                     matches.Add(getTagRegex(childDefinition));
                 }
                 matches.Add(getUnknownTagRegex());
-                string match = "{{(" + String.Join("|", matches) + ")}}";
+                string match = "{{(" + String.Join("|", matches.ToArray()) + ")}}";
                 regex = new Regex(match);
                 _regexLookup.Add(definition.Name, regex);
             }

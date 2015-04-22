@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mustache.Net35;
+using System;
 using System.IO;
 using System.Text;
 
@@ -38,12 +39,12 @@ namespace Mustache
         {
             StringBuilder formatBuilder = new StringBuilder();
             formatBuilder.Append("{0");
-            if (!String.IsNullOrWhiteSpace(alignment))
+            if (!String35.IsNullOrWhiteSpace(alignment))
             {
                 formatBuilder.Append(",");
                 formatBuilder.Append(alignment.TrimStart('+'));
             }
-            if (!String.IsNullOrWhiteSpace(formatting))
+            if (!String35.IsNullOrWhiteSpace(formatting))
             {
                 formatBuilder.Append(":");
                 formatBuilder.Append(formatting);
